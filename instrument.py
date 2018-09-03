@@ -62,11 +62,3 @@ def GetInstrument(symbol):
     d = instruments.get(symbol)
     return Instrument(**d)
 
-def main():
-    sum = functools.reduce(lambda x,y:x*y,[2,4,6,8,10])
-    print(math.pow(sum, 1/5))
-    for s in ['TEA','TEA','POP','TEA']:
-        print(GetInstrument(s))
-    
-if __name__== "__main__":
-  main()
